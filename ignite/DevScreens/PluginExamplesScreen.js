@@ -3,7 +3,8 @@
 // As to not break the automated addition/subtractions.
 import React from 'react'
 import { View, ScrollView, Text, TouchableOpacity, Image } from 'react-native'
-import { createStackNavigator, createAppContainer } from 'react-navigation'
+import { createAppContainer } from 'react-navigation'
+import { createStackNavigator } from 'react-navigation-stack'
 import { Images } from './DevTheme'
 
 // Examples Render Engine
@@ -15,7 +16,7 @@ import '../Examples/Components/vectorExample.js'
 import styles from './Styles/PluginExamplesScreenStyles'
 
 class PluginExamplesScreen extends React.Component {
-  render () {
+  render() {
     return (
       <View style={styles.mainContainer}>
         <Image source={Images.background} style={styles.backgroundImage} resizeMode='stretch' />
@@ -29,7 +30,7 @@ class PluginExamplesScreen extends React.Component {
         </TouchableOpacity>
         <ScrollView style={styles.container}>
           <View style={styles.scrollContent}>
-            <View style={{alignItems: 'center', paddingTop: 60}}>
+            <View style={{ alignItems: 'center', paddingTop: 60 }}>
               <Image source={Images.usageExamples} style={styles.logo} />
               <Text style={styles.titleText}>Plugin Examples</Text>
             </View>
@@ -51,7 +52,7 @@ class PluginExamplesScreen extends React.Component {
 }
 
 const stackNavigator = createStackNavigator({
-  PluginExamplesScreen: {screen: PluginExamplesScreen}
+  PluginExamplesScreen: { screen: PluginExamplesScreen }
 }, {
   cardStyle: {
     opacity: 1,

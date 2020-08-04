@@ -11,7 +11,11 @@ const colors = {
   fire: '#ff3832',
   eggplant: '#251a34',
   border: '#483F53',
-  text: '#E0D7E5'
-}
+  text: '#E0D7E5',
+  info: 'royalblue',
+  success: 'forestgreen',
+  warning: 'gold',
+  error: 'crimson',
+};
 
-export default colors
+export default colors;

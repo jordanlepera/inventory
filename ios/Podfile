@@ -1,8 +1,8 @@
 platform :ios, '9.0'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
-target 'src' do
-  # Pods for src
+target 'Inventory' do
+  # Pods for Inventory
   pod 'FBLazyVector', :path => "../node_modules/react-native/Libraries/FBLazyVector"
   pod 'FBReactNativeSpec', :path => "../node_modules/react-native/Libraries/FBReactNativeSpec"
   pod 'RCTRequired', :path => "../node_modules/react-native/Libraries/RCTRequired"
@@ -34,15 +34,11 @@ target 'src' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-  pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
 
-  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
 
-  pod 'RNI18n', :path => '../node_modules/react-native-i18n'
 
-  pod 'RNDeviceInfo', :path => '../node_modules/react-native-device-info'
 
-  target 'srcTests' do
+  target 'InventoryTests' do
     inherit! :search_paths
     # Pods for testing
   end
@@ -50,10 +46,10 @@ target 'src' do
   use_native_modules!
 end
 
-target 'src-tvOS' do
-  # Pods for src-tvOS
+target 'Inventory-tvOS' do
+  # Pods for Inventory-tvOS
 
-  target 'src-tvOSTests' do
+  target 'Inventory-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end
